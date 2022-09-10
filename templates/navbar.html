@@ -1,0 +1,8 @@
+
+<ul>
+{% for item in users %}
+    <li>
+    <a href="{% url 'detail' item.id %}">{{ item.frist_name }}</a>
+    </li>
+{% endfor %}
+</ul>
